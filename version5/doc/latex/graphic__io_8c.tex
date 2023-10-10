@@ -1,0 +1,78 @@
+\hypertarget{graphic__io_8c}{}\section{src/graphic\+\_\+io.c File Reference}
+\label{graphic__io_8c}\index{src/graphic\+\_\+io.\+c@{src/graphic\+\_\+io.\+c}}
+
+
+\hyperlink{io_8c}{io.\+c} version graphique  
+
+
+{\ttfamily \#include \char`\"{}../include/io.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$cairo.\+h$>$}\newline
+{\ttfamily \#include $<$cairo-\/xlib.\+h$>$}\newline
+{\ttfamily \#include $<$X11/\+Xlib.\+h$>$}\newline
+{\ttfamily \#include $<$X11/\+Xutil.\+h$>$}\newline
+{\ttfamily \#include $<$X11/\+Xos.\+h$>$}\newline
+Include dependency graph for graphic\+\_\+io.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphic__io_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{graphic__io_8c_a392fb874e547e582e9c66a08a1f23326}\label{graphic__io_8c_a392fb874e547e582e9c66a08a1f23326}} 
+\#define {\bfseries M\+AX}~100
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{graphic__io_8c_aa0e6e406ce591df8f57f726777fcee84}\label{graphic__io_8c_aa0e6e406ce591df8f57f726777fcee84}} 
+int {\bfseries memes\+\_\+grilles} (grille gf, grille gs)
+\item 
+\mbox{\Hypertarget{graphic__io_8c_ad31f4dc228626cdfd6c3ecdda5dc24e1}\label{graphic__io_8c_ad31f4dc228626cdfd6c3ecdda5dc24e1}} 
+int {\bfseries vide} (grille g)
+\item 
+\mbox{\Hypertarget{graphic__io_8c_ac187666c44b44a1ebc9d2ce0dc4c7d4f}\label{graphic__io_8c_ac187666c44b44a1ebc9d2ce0dc4c7d4f}} 
+int {\bfseries oscillation} (grille g)
+\item 
+\mbox{\Hypertarget{graphic__io_8c_af7a0e72638475403c88280d95e5e5ddc}\label{graphic__io_8c_af7a0e72638475403c88280d95e5e5ddc}} 
+void {\bfseries affiche\+\_\+grille\+\_\+gr} (cairo\+\_\+surface\+\_\+t $\ast$surface, grille g)
+\item 
+\mbox{\Hypertarget{graphic__io_8c_a88493b3c55828670e47150a95ed7db5b}\label{graphic__io_8c_a88493b3c55828670e47150a95ed7db5b}} 
+void {\bfseries debut\+\_\+jeu} (grille $\ast$g, grille $\ast$gc)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{graphic__io_8c_a0bb2118c2d82d8f0cbcf4af35b2190f4}\label{graphic__io_8c_a0bb2118c2d82d8f0cbcf4af35b2190f4}} 
+int {\bfseries var\+\_\+osc} = 0
+\item 
+\mbox{\Hypertarget{graphic__io_8c_a01b08503e9a224ad55c72d5602261b3e}\label{graphic__io_8c_a01b08503e9a224ad55c72d5602261b3e}} 
+char {\bfseries char\+Osc} \mbox{[}20\mbox{]}
+\item 
+\mbox{\Hypertarget{graphic__io_8c_a6b97f4eae310abb38adeb4a07c77e434}\label{graphic__io_8c_a6b97f4eae310abb38adeb4a07c77e434}} 
+char {\bfseries text\+Osc} \mbox{[}50\mbox{]}
+\item 
+\mbox{\Hypertarget{graphic__io_8c_ae0aa920346296038f211a227948cc303}\label{graphic__io_8c_ae0aa920346296038f211a227948cc303}} 
+char {\bfseries char\+Evol} \mbox{[}20\mbox{]}
+\item 
+\mbox{\Hypertarget{graphic__io_8c_ab9f5d45c98b073e219011d616152beef}\label{graphic__io_8c_ab9f5d45c98b073e219011d616152beef}} 
+char {\bfseries text\+Evol} \mbox{[}50\mbox{]}
+\item 
+\mbox{\Hypertarget{graphic__io_8c_a0e9a30bb8b7641d7e0bb8da3389dc99d}\label{graphic__io_8c_a0e9a30bb8b7641d7e0bb8da3389dc99d}} 
+char {\bfseries file\+Name} \mbox{[}1000\mbox{]}
+\item 
+\mbox{\Hypertarget{graphic__io_8c_a58bddfee270826e6d3804720ca34139b}\label{graphic__io_8c_a58bddfee270826e6d3804720ca34139b}} 
+int($\ast$ {\bfseries compte\+Voisins\+Vivants} )(int, int, grille) = \&compte\+\_\+voisins\+\_\+vivants\+\_\+cycliques
+\item 
+\mbox{\Hypertarget{graphic__io_8c_a00dfe53a94dc0ec221a4d575e3159311}\label{graphic__io_8c_a00dfe53a94dc0ec221a4d575e3159311}} 
+void($\ast$ {\bfseries evolue} )(grille $\ast$g, grille $\ast$gc, int($\ast$cyclique\+\_\+ou\+\_\+pas)(int, int, grille)) =\&evolue\+\_\+sv
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{io_8c}{io.\+c} version graphique 
+

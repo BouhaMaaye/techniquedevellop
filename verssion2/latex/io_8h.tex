@@ -1,0 +1,149 @@
+\hypertarget{io_8h}{}\section{io.\+h File Reference}
+\label{io_8h}\index{io.\+h@{io.\+h}}
+
+
+Fichier contenant les déclarations des fonctions de \hyperlink{io_8c}{io.\+c}.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}grille.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}jeu.\+h\char`\"{}}\\*
+Include dependency graph for io.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{io_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{io_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{io_8h_a634cf584c380ce221d5d4199f3e813bd}{affiche\+\_\+trait} (int c)
+\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}afficher le caractère \textquotesingle{}$\vert$\textquotesingle{} pour faire les traits. \end{DoxyCompactList}\item 
+void \hyperlink{io_8h_a3f3ff78e56fcf21a932ff73b70635554}{affiche\+\_\+ligne} (int c, int $\ast$ligne)
+\begin{DoxyCompactList}\small\item\em Affichage d\textquotesingle{}une ligne de la grille. \end{DoxyCompactList}\item 
+void \hyperlink{io_8h_a90cb8ec05374b46d9995705ed4954f34}{affiche\+\_\+grille} (\hyperlink{structgrille}{grille} g)
+\begin{DoxyCompactList}\small\item\em affichage d\textquotesingle{}une grille \end{DoxyCompactList}\item 
+void \hyperlink{io_8h_ab36a6f8957cd3e682119007836ce6ad5}{efface\+\_\+grille} (\hyperlink{structgrille}{grille} g)
+\begin{DoxyCompactList}\small\item\em effacement d\textquotesingle{}une grille \end{DoxyCompactList}\item 
+void \hyperlink{io_8h_a88493b3c55828670e47150a95ed7db5b}{debut\+\_\+jeu} (\hyperlink{structgrille}{grille} $\ast$g, \hyperlink{structgrille}{grille} $\ast$gc)
+\begin{DoxyCompactList}\small\item\em debute le jeu \end{DoxyCompactList}\item 
+void \hyperlink{io_8h_a1215302c999b838f742e37d46df4a2e6}{affiche\+\_\+evolution} (int $\ast$evol)
+\begin{DoxyCompactList}\small\item\em affiche le temps d\textquotesingle{}évolution (incrémenté de 1 à chaque coup) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Fichier contenant les déclarations des fonctions de \hyperlink{io_8c}{io.\+c}. 
+
+
+
+\subsection{Function Documentation}
+\index{io.\+h@{io.\+h}!affiche\+\_\+evolution@{affiche\+\_\+evolution}}
+\index{affiche\+\_\+evolution@{affiche\+\_\+evolution}!io.\+h@{io.\+h}}
+\subsubsection[{\texorpdfstring{affiche\+\_\+evolution(int $\ast$evol)}{affiche_evolution(int *evol)}}]{\setlength{\rightskip}{0pt plus 5cm}void affiche\+\_\+evolution (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{evol}
+\end{DoxyParamCaption}
+)}\hypertarget{io_8h_a1215302c999b838f742e37d46df4a2e6}{}\label{io_8h_a1215302c999b838f742e37d46df4a2e6}
+
+
+affiche le temps d\textquotesingle{}évolution (incrémenté de 1 à chaque coup) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$evol} & pointeur sur la variable d\textquotesingle{}evolution \\
+\hline
+\end{DoxyParams}
+\index{io.\+h@{io.\+h}!affiche\+\_\+grille@{affiche\+\_\+grille}}
+\index{affiche\+\_\+grille@{affiche\+\_\+grille}!io.\+h@{io.\+h}}
+\subsubsection[{\texorpdfstring{affiche\+\_\+grille(grille g)}{affiche_grille(grille g)}}]{\setlength{\rightskip}{0pt plus 5cm}void affiche\+\_\+grille (
+\begin{DoxyParamCaption}
+\item[{{\bf grille}}]{g}
+\end{DoxyParamCaption}
+)}\hypertarget{io_8h_a90cb8ec05374b46d9995705ed4954f34}{}\label{io_8h_a90cb8ec05374b46d9995705ed4954f34}
+
+
+affichage d\textquotesingle{}une grille 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & grille \\
+\hline
+\end{DoxyParams}
+\index{io.\+h@{io.\+h}!affiche\+\_\+ligne@{affiche\+\_\+ligne}}
+\index{affiche\+\_\+ligne@{affiche\+\_\+ligne}!io.\+h@{io.\+h}}
+\subsubsection[{\texorpdfstring{affiche\+\_\+ligne(int c, int $\ast$ligne)}{affiche_ligne(int c, int *ligne)}}]{\setlength{\rightskip}{0pt plus 5cm}void affiche\+\_\+ligne (
+\begin{DoxyParamCaption}
+\item[{int}]{c, }
+\item[{int $\ast$}]{ligne}
+\end{DoxyParamCaption}
+)}\hypertarget{io_8h_a3f3ff78e56fcf21a932ff73b70635554}{}\label{io_8h_a3f3ff78e56fcf21a932ff73b70635554}
+
+
+Affichage d\textquotesingle{}une ligne de la grille. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & colonnes \\
+\hline
+{\em $\ast$ligne} & pointeur lignes \\
+\hline
+\end{DoxyParams}
+\index{io.\+h@{io.\+h}!affiche\+\_\+trait@{affiche\+\_\+trait}}
+\index{affiche\+\_\+trait@{affiche\+\_\+trait}!io.\+h@{io.\+h}}
+\subsubsection[{\texorpdfstring{affiche\+\_\+trait(int c)}{affiche_trait(int c)}}]{\setlength{\rightskip}{0pt plus 5cm}void affiche\+\_\+trait (
+\begin{DoxyParamCaption}
+\item[{int}]{c}
+\end{DoxyParamCaption}
+)}\hypertarget{io_8h_a634cf584c380ce221d5d4199f3e813bd}{}\label{io_8h_a634cf584c380ce221d5d4199f3e813bd}
+
+
+Permet d\textquotesingle{}afficher le caractère \textquotesingle{}$\vert$\textquotesingle{} pour faire les traits. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & colonnes \\
+\hline
+\end{DoxyParams}
+\index{io.\+h@{io.\+h}!debut\+\_\+jeu@{debut\+\_\+jeu}}
+\index{debut\+\_\+jeu@{debut\+\_\+jeu}!io.\+h@{io.\+h}}
+\subsubsection[{\texorpdfstring{debut\+\_\+jeu(grille $\ast$g, grille $\ast$gc)}{debut_jeu(grille *g, grille *gc)}}]{\setlength{\rightskip}{0pt plus 5cm}void debut\+\_\+jeu (
+\begin{DoxyParamCaption}
+\item[{{\bf grille} $\ast$}]{g, }
+\item[{{\bf grille} $\ast$}]{gc}
+\end{DoxyParamCaption}
+)}\hypertarget{io_8h_a88493b3c55828670e47150a95ed7db5b}{}\label{io_8h_a88493b3c55828670e47150a95ed7db5b}
+
+
+debute le jeu 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$g} & pointeur grille \\
+\hline
+{\em $\ast$gc} & pointeur grille On utilise cette fonction avec les touches \textquotesingle{}entrée\textquotesingle{} (avancer), \textquotesingle{}q\textquotesingle{} (quitter), \textquotesingle{}n\textquotesingle{} (changement de grille), \textquotesingle{}c\textquotesingle{} (cyclique-\/$>$non-\/cyclique) (niv2prototype) \\
+\hline
+\end{DoxyParams}
+\index{io.\+h@{io.\+h}!efface\+\_\+grille@{efface\+\_\+grille}}
+\index{efface\+\_\+grille@{efface\+\_\+grille}!io.\+h@{io.\+h}}
+\subsubsection[{\texorpdfstring{efface\+\_\+grille(grille g)}{efface_grille(grille g)}}]{\setlength{\rightskip}{0pt plus 5cm}void efface\+\_\+grille (
+\begin{DoxyParamCaption}
+\item[{{\bf grille}}]{g}
+\end{DoxyParamCaption}
+)}\hypertarget{io_8h_ab36a6f8957cd3e682119007836ce6ad5}{}\label{io_8h_ab36a6f8957cd3e682119007836ce6ad5}
+
+
+effacement d\textquotesingle{}une grille 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & grille \\
+\hline
+\end{DoxyParams}

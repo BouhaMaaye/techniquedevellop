@@ -1,0 +1,124 @@
+\hypertarget{grille_8h}{}\section{grille.\+h File Reference}
+\label{grille_8h}\index{grille.\+h@{grille.\+h}}
+
+
+Fichier contenant les déclaraions des fonctions de \hyperlink{grille_8c}{grille.\+c}.  
+
+
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$assert.\+h$>$}\\*
+Include dependency graph for grille.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{grille_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{grille_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structgrille}{grille}
+\begin{DoxyCompactList}\small\item\em Structure grille \+: nombre de lignes, nombre de colonnes, tableau de tableau de cellules int nbl\+: Nombre de ligne de cellules int nbc\+: Nombre de colonnes de cellules int$\ast$$\ast$ cellules\+: Pointeur de pointeur du tableau contenant les cellules (Tableau 2D) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{grille_8h_ae621f51c60aa4fafaa0c9f6c9b5a4036}{alloue\+\_\+grille} (int l, int c, \hyperlink{structgrille}{grille} $\ast$g)
+\begin{DoxyCompactList}\small\item\em Alloue une grille de taille l$\ast$c, et initialise toutes les cellules à mortes. \end{DoxyCompactList}\item 
+void \hyperlink{grille_8h_a7074b2b15576e9d2b3cd15c3a1dc7012}{libere\+\_\+grille} (\hyperlink{structgrille}{grille} $\ast$g)
+\begin{DoxyCompactList}\small\item\em Libère une grille. \end{DoxyCompactList}\item 
+void \hyperlink{grille_8h_adf5501cc0bbad28f5ffc561d92197e4e}{init\+\_\+grille\+\_\+from\+\_\+file} (char $\ast$filename, \hyperlink{structgrille}{grille} $\ast$g)
+\begin{DoxyCompactList}\small\item\em Alloue et initalise la grille g à partir d\textquotesingle{}un fichier. \end{DoxyCompactList}\item 
+void \hyperlink{grille_8h_a63b3ae16c86b568f6aa8f9ce84128b1e}{copie\+\_\+grille} (\hyperlink{structgrille}{grille} gs, \hyperlink{structgrille}{grille} gd)
+\begin{DoxyCompactList}\small\item\em recopie gs dans gd (sans allocation) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Fichier contenant les déclaraions des fonctions de \hyperlink{grille_8c}{grille.\+c}. 
+
+
+
+\subsection{Function Documentation}
+\index{grille.\+h@{grille.\+h}!alloue\+\_\+grille@{alloue\+\_\+grille}}
+\index{alloue\+\_\+grille@{alloue\+\_\+grille}!grille.\+h@{grille.\+h}}
+\subsubsection[{\texorpdfstring{alloue\+\_\+grille(int l, int c, grille $\ast$g)}{alloue_grille(int l, int c, grille *g)}}]{\setlength{\rightskip}{0pt plus 5cm}void alloue\+\_\+grille (
+\begin{DoxyParamCaption}
+\item[{int}]{l, }
+\item[{int}]{c, }
+\item[{{\bf grille} $\ast$}]{g}
+\end{DoxyParamCaption}
+)}\hypertarget{grille_8h_ae621f51c60aa4fafaa0c9f6c9b5a4036}{}\label{grille_8h_ae621f51c60aa4fafaa0c9f6c9b5a4036}
+
+
+Alloue une grille de taille l$\ast$c, et initialise toutes les cellules à mortes. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em l} & Nombre de ligne à allouer \\
+\hline
+\mbox{\tt in}  & {\em c} & Nombre de colonnes à allouer \\
+\hline
+\mbox{\tt out}  & {\em g} & Pointeur sur la grille allouée de taille l$\ast$c \\
+\hline
+\end{DoxyParams}
+\index{grille.\+h@{grille.\+h}!copie\+\_\+grille@{copie\+\_\+grille}}
+\index{copie\+\_\+grille@{copie\+\_\+grille}!grille.\+h@{grille.\+h}}
+\subsubsection[{\texorpdfstring{copie\+\_\+grille(grille gs, grille gd)}{copie_grille(grille gs, grille gd)}}]{\setlength{\rightskip}{0pt plus 5cm}void copie\+\_\+grille (
+\begin{DoxyParamCaption}
+\item[{{\bf grille}}]{gs, }
+\item[{{\bf grille}}]{gd}
+\end{DoxyParamCaption}
+)}\hypertarget{grille_8h_a63b3ae16c86b568f6aa8f9ce84128b1e}{}\label{grille_8h_a63b3ae16c86b568f6aa8f9ce84128b1e}
+
+
+recopie gs dans gd (sans allocation) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gs} & Grille source \\
+\hline
+{\em gd} & Grille destination \\
+\hline
+\end{DoxyParams}
+\index{grille.\+h@{grille.\+h}!init\+\_\+grille\+\_\+from\+\_\+file@{init\+\_\+grille\+\_\+from\+\_\+file}}
+\index{init\+\_\+grille\+\_\+from\+\_\+file@{init\+\_\+grille\+\_\+from\+\_\+file}!grille.\+h@{grille.\+h}}
+\subsubsection[{\texorpdfstring{init\+\_\+grille\+\_\+from\+\_\+file(char $\ast$filename, grille $\ast$g)}{init_grille_from_file(char *filename, grille *g)}}]{\setlength{\rightskip}{0pt plus 5cm}void init\+\_\+grille\+\_\+from\+\_\+file (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{filename, }
+\item[{{\bf grille} $\ast$}]{g}
+\end{DoxyParamCaption}
+)}\hypertarget{grille_8h_adf5501cc0bbad28f5ffc561d92197e4e}{}\label{grille_8h_adf5501cc0bbad28f5ffc561d92197e4e}
+
+
+Alloue et initalise la grille g à partir d\textquotesingle{}un fichier. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$filename} & Nom du fichier à charger \\
+\hline
+{\em $\ast$g} & pointeur grille \\
+\hline
+\end{DoxyParams}
+\index{grille.\+h@{grille.\+h}!libere\+\_\+grille@{libere\+\_\+grille}}
+\index{libere\+\_\+grille@{libere\+\_\+grille}!grille.\+h@{grille.\+h}}
+\subsubsection[{\texorpdfstring{libere\+\_\+grille(grille $\ast$g)}{libere_grille(grille *g)}}]{\setlength{\rightskip}{0pt plus 5cm}void libere\+\_\+grille (
+\begin{DoxyParamCaption}
+\item[{{\bf grille} $\ast$}]{g}
+\end{DoxyParamCaption}
+)}\hypertarget{grille_8h_a7074b2b15576e9d2b3cd15c3a1dc7012}{}\label{grille_8h_a7074b2b15576e9d2b3cd15c3a1dc7012}
+
+
+Libère une grille. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em g} & Pointeur sur la grille à allouer (lignes et colonnes) \\
+\hline
+\end{DoxyParams}
